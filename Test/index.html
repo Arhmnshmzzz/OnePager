@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>04 부가서비스</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Styles.css" />
+  </head>
+  <body>
+    <div class="head">
+      <button type="back">
+        <img src="/images/left-arrow.png" alt="" />
+      </button>
+      <span>빠르게 판매하기</span>
+
+      <span>등록 취소</span>
+    </div>
+    <div class="cover">
+      <h1>직거래카닷컴으로</h1>
+      <h2>즉시 판매</h2>
+
+      <h3>서비스 안내</h3>
+      <p>
+        즉시 현금이 필요하거나, 빠른시간 내 판매하고자 하시는 고객님께 제공해
+        드리는 서비스입니다. 
+      </p>
+
+      <span>24/365 서비스신청 시 당일 접수, 당일 방문 드립니다</span>
+    </div>
+
+    <div class="button-container">
+      <button>서비스안내</button>
+      <button>서비스신청</button>
+    </div>
+    <div class="btn-image">
+      <img src="/images/image 43.png" alt="" />
+    </div>
+
+    <div class="wrapper">
+      <div class="steps" id="steps">
+        <div class="step">
+          <div class="number completed">
+            <svg viewBox="0 0 512 512" width="100" title="check">
+              <path
+                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+              />
+            </svg>
+          </div>
+          <div class="info">
+            <p class="title">Verify Identity</p>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+              pariatur minima nemo? Facilis veniam reprehenderit quaerat
+              aspernatur, quis voluptas voluptate.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="number">2</div>
+          <div class="info">
+            <p class="title">Create Account</p>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+              pariatur minima nemo? Facilis veniam reprehenderit quaerat
+              aspernatur, quis voluptas voluptate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="button-container">
+      <button>서비스안내</button>
+      <button>서비스신청</button>
+    </div>
+    <div class="container">
+      <form action="#" class="form">
+        <div class="form-group">
+          <label for="name">신청자명</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="홍길동"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone">휴대폰 번호</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="010-3333-4444"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="birthdate">방문요청일</label>
+          <input
+            type="text"
+            id="birthdate"
+            name="birthdate"
+            class="datepicker-input"
+            placeholder="방문요청일 선택"
+            onfocus="this.type='date'"
+            onblur="this.type='text'"
+          />
+        </div>
+        <div class="form-group">
+          <label for="visit-time">방문요청시간:</label>
+          <select id="visit-time" name="visit-time" required>
+            <option value="" disabled selected>방문요청시간 선택</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+          </select>
+        </div>
+        <br />
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="terms">[필수] 개인정보 수집/이용 동의</label>
+        </div>
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="subscribe" name="subscribe" />
+          <label for="subscribe">[필수] 입력정보 제 3자제공 동의</label>
+        </div>
+        <br />
+        <div class="centered-btn">
+          <button type="submit" class="submit-btn">
+            딜러를 통한 즉시판매 신청
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
